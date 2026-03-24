@@ -1,4 +1,4 @@
-import { ScrollView } from 'react-native';
+import { StyleSheet, ScrollView, Image } from 'react-native';
 import { styles } from '../../assets/my_styles';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
@@ -9,8 +9,8 @@ export default function DetailScreen() {
     <ScrollView>
       <View style={styles.container}>
         <Text style={styles.title}>Detail</Text>
-        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-        <EditScreenInfo path="app/(tabs)/two.tsx" />
+        {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+        <EditScreenInfo path="app/(tabs)/two.tsx" /> */}
     </View>
     </ScrollView>
   );

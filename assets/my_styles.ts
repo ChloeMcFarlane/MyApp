@@ -22,28 +22,37 @@ const theme = {
 }
 
 export const styles = StyleSheet.create({    
+    background:{
+        backgroundColor: theme.colors.bg,
+    },
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: theme.colors.bg,
-      },
-      title: {
+        borderRadius: 10, // Added rounded border
+    },
+    title: {
         fontSize: theme.fontSize.title,
+        color: theme.colors.text,
         fontWeight: 'bold',
         marginTop: 24,
-      },
-      separator: {
+    },
+    subtitle: {
+        fontSize: theme.fontSize.body,
+        color: theme.colors.text,
+        marginTop: theme.spacing.sm,
+    },
+    separator: {
         marginVertical: 30,
         height: 1,
         width: '80%',
         backgroundColor: theme.colors.accent
-      },
-      img: {
+    },
+    img: {
         width: 200,
         height: 200,
         marginTop: 20,
         alignSelf: 'center', // Center the image
-      },
-
+        borderRadius: 100, // Added rounded border for the image
+    },
 })
