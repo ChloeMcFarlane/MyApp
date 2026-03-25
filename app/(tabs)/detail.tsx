@@ -6,7 +6,7 @@ import { Text, View } from '@/components/Themed';
 
 export default function DetailScreen() {
   return (
-    <ScrollView>
+    <ScrollView style={styles.background}>
       <View style={styles.container}>
         <Text style={styles.title}>Detail</Text>
         {/* INTEREST 1 */}
