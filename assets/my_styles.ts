@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 const theme = {
     colors: {
-        bg: '#f0c2d4',       // Cherry blossom (fixed — was '#f04c2d4', invalid hex)
+        bg: '#f0c2d4',       // Cherry blossom 
         bgLight: '#EAE0C8',  // Pearl
         text: '#fbb2c2',     // Love spell
         separator: '#fbb2c2', // Love spell
@@ -25,7 +25,7 @@ const theme = {
 export const styles = StyleSheet.create({
     background: {
         flex: 1,
-        backgroundColor: theme.colors.bg, // now actually #f0c2d4 soft pink
+        backgroundColor: theme.colors.bg, 
         paddingHorizontal: theme.spacing.md,
         paddingTop: theme.spacing.lg,
     },
@@ -34,7 +34,23 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 14,
-        marginBottom: theme.spacing.md,   // space between containers
+        marginBottom: theme.spacing.md,   
+        marginHorizontal: theme.spacing.sm,
+        paddingVertical: theme.spacing.md,
+        paddingHorizontal: theme.spacing.md,
+
+        shadowColor: theme.colors.dkAccent,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.18,
+        shadowRadius: 4,
+        elevation: 3,
+    },
+
+    detailContainer: {
+        backgroundColor: theme.colors.accent,
+        alignItems: 'center',
+        borderRadius: 14,
+        marginBottom: theme.spacing.md,   
         marginHorizontal: theme.spacing.sm,
         paddingVertical: theme.spacing.md,
         paddingHorizontal: theme.spacing.md,
@@ -76,6 +92,20 @@ export const styles = StyleSheet.create({
         borderWidth: 2,                 
         borderColor: theme.colors.dkAccent,
     },
+    detailImg: {
+
+        width: 200,
+        height: 200,
+        maxWidth: '100%',
+        //resizeMode: 'contain',
+        marginTop: theme.spacing.md,
+        marginBottom: theme.spacing.sm, 
+        alignSelf: 'center',
+        borderRadius: 14,
+        borderWidth: 2,                 
+        borderColor: theme.colors.dkAccent,
+    },
+
     info: {
         fontSize: theme.fontSize.body,
         color: theme.colors.text,

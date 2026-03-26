@@ -7,23 +7,27 @@ import { Text, View } from '@/components/Themed';
 export default function DetailScreen() {
   return (
     <ScrollView style={styles.background}>
-      <View style={styles.container}>
+      <View style={styles.detailContainer}>
         <Text style={styles.title}>Detail</Text>
         {/* INTEREST 1 */}
         <View style={styles.container}>
-          {/* <Image source={{ uri: 'https://cs-people.bu.edu/cmcfar/images'}} style={styles.img} /> */}
-          <Image source={{ uri: '#'}} style={styles.img} />
-          <Text style={styles.info}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa labore aliquid, mollitia tempora praesentium, placeat, assumenda at hic sapiente dicta corporis quisquam. Totam saepe a fuga? Nam, deserunt fuga.</Text>
+          <Image source={{ uri: 'https://cs-people.bu.edu/cmcfar/images/IMG_5038.jpeg'}} style={styles.detailImg} />
+          <Text style={styles.info}>I'm vegan but I love finding new, fun, and inventive foods.</Text>
         </View>
         {/* INTEREST 2 */}
         <View style={styles.container}>
-          <Image source={{ uri: '#'}} style={styles.img} />
-          <Text style={styles.info}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa labore aliquid, mollitia tempora praesentium, placeat, assumenda at hic sapiente dicta corporis quisquam. Totam saepe a fuga? Nam, deserunt fuga.</Text>
+          <Image source={{ uri: 'https://cs-people.bu.edu/cmcfar/images/IMG_3784.jpeg'}} style={styles.detailImg} />
+          <Text style={styles.info}> My winter drink of choice is mulled wine</Text>
         </View>
         {/* INTEREST 3 */}
         <View style={styles.container}>
-          <Image source={{ uri: '#'}} style={styles.img} />
-          <Text style={styles.info}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa labore aliquid, mollitia tempora praesentium, placeat, assumenda at hic sapiente dicta corporis quisquam. Totam saepe a fuga? Nam, deserunt fuga.</Text>
+          <Image source={{ uri: 'https://cs-people.bu.edu/cmcfar/images/IMG_3928.jpeg'}} style={styles.detailImg} />
+          <Text style={styles.info}>I'm addicted to Matcha</Text>
+        </View>
+        {/* INTEREST 4 */}
+        <View style={styles.container}>
+          <Image source={{ uri: 'https://cs-people.bu.edu/cmcfar/images/IMG_4956.jpeg'}} style={styles.detailImg} />
+          <Text style={styles.info}>I love love love art galleries, here's one I went to recently in London</Text>
         </View>
         {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
         <EditScreenInfo path="app/(tabs)/two.tsx" /> */}

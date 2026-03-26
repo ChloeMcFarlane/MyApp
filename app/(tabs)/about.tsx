@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView, Image} from 'react-native';
+import { FlatList, StyleSheet, ScrollView, Image} from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
@@ -7,6 +7,16 @@ import { styles } from '../../assets/my_styles';
 const chloe = require('../../assets/images/chloe.jpeg');
 
 export default function AboutScreen() {
+
+  const items = [
+    {key: '- I run a 5k every day'},
+    {key: '- I do content creation on the side'},
+    {key: '- I love Jazz bars'},
+    {key: '- Im constantly traveling to see new places'},
+    {key: '- Im an actor'},
+    {key: '- I finding new recipies to cook'},
+  ];
+
   return (
     <ScrollView style={styles.background}>
       <View style={styles.container}>
@@ -14,16 +24,17 @@ export default function AboutScreen() {
         <Text style={styles.subtitle}>
             Welcome to my React app. A few things about me:
         </Text>
-        <Text style={styles.info}>
-            - I'm an acting major! {'\n'}
-            - I love running and hiking  {'\n'}
-            - I travel a bunch, and my favorite places I've been to are Berlin and Paris  {'\n'}
-        </Text>
-        <Image source = {chloe} style={styles.img}></Image>
-        {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-        <EditScreenInfo path="app/(tabs)/index.tsx"/> */}
       </View>
+
+      <View style={styles.container}>
+        {items.map((item)=>(
+          <Text key = {item.key} style = {styles.info}>{item.key}</Text>
+        ))}
+      </View>
+      <Image source={chloe} style={styles.img} />
     </ScrollView>
+
+    
   );
 }
 
